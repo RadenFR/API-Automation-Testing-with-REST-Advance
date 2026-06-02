@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sport/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3Ea7VLqyCCYubXbY5dPFzHUW8qt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml.executor": "Run",
+    "TestNG.LoginTest (1).executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.SportCategoryTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/main/java/Unknown/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport" />
+      <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src\main\resources" />
+      <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src\resources" />
+      <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance" />
+      <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SportCategoryTest">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="live-api-automation-b04-advance" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="live-api-automation-b04-advance" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="live-api-automation-b04-advance" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/sport/src/test/java/runner/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.auth" />
+      <option name="MAIN_CLASS_NAME" value="tests.auth.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="live-api-automation-b04-advance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.auth" />
+      <option name="MAIN_CLASS_NAME" value="tests.auth.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SportCategoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.sportcategory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.sportcategory" />
+      <option name="MAIN_CLASS_NAME" value="tests.sportcategory.SportCategoryTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SportCategoryTest" />
+        <item itemvalue="TestNG.LoginTest (1)" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="" />
+      <created>1780404848525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780404848525</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sport/src/main/java/sport/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
