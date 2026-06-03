@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sport/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/src/main/resources/json/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/main/resources/json/token.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/src/test/java/tests/sportcategory/SportCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/test/java/tests/sportcategory/SportCategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/target/classes/json/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/classes/json/token.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +47,13 @@
     "TestNG.C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml.executor": "Run",
     "TestNG.LoginTest (1).executor": "Run",
     "TestNG.LoginTest.executor": "Run",
+    "TestNG.SportActivityTest.createSportActivity.executor": "Run",
+    "TestNG.SportActivityTest.getSportActivity.executor": "Run",
     "TestNG.SportCategoryTest.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/API-Automation-Testing-with-REST-Advance",
     "onboarding.tips.debug.path": "C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/main/java/Unknown/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -62,7 +70,7 @@
       <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SportCategoryTest">
+  <component name="RunManager" selected="TestNG.SportActivityTest.getActivityById">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="live-api-automation-b04-advance" />
       <method v="2">
@@ -73,16 +81,6 @@
       <module name="live-api-automation-b04-advance" />
       <option name="filePath" />
       <method v="2" />
-    </configuration>
-    <configuration name="C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="live-api-automation-b04-advance" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/sport/src/test/java/runner/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sport" />
@@ -101,17 +99,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="live-api-automation-b04-advance" />
+    <configuration name="SportActivityTest.createSportActivity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.auth.*" />
+          <option name="PATTERN" value="tests.sportactivity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.auth" />
-      <option name="MAIN_CLASS_NAME" value="tests.auth.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="tests.sportactivity" />
+      <option name="MAIN_CLASS_NAME" value="tests.sportactivity.SportActivityTest" />
+      <option name="METHOD_NAME" value="createSportActivity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SportActivityTest.getActivityById" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.sportactivity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.sportactivity" />
+      <option name="MAIN_CLASS_NAME" value="tests.sportactivity.SportActivityTest" />
+      <option name="METHOD_NAME" value="getActivityById" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SportActivityTest.getSportActivity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.sportactivity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.sportactivity" />
+      <option name="MAIN_CLASS_NAME" value="tests.sportactivity.SportActivityTest" />
+      <option name="METHOD_NAME" value="getSportActivity" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -137,10 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SportActivityTest.getActivityById" />
+        <item itemvalue="TestNG.SportActivityTest.createSportActivity" />
+        <item itemvalue="TestNG.SportActivityTest.getSportActivity" />
         <item itemvalue="TestNG.SportCategoryTest" />
         <item itemvalue="TestNG.LoginTest (1)" />
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml" />
       </list>
     </recent_temporary>
   </component>

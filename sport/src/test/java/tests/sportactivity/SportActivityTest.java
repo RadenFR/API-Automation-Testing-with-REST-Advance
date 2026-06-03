@@ -1,6 +1,7 @@
-package tests.sportcategory;
+package tests.sportactivity;
 
 import base.BaseTest;
+import body.sportactivity.SportActivityBody;
 import body.sportcategory.SportCategoryBody;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -9,17 +10,16 @@ import org.testng.annotations.Test;
 import utils.TokenHelper;
 import utils.Utils;
 
-public class SportCategoryTest extends BaseTest {
-    //Tambahkan Sportcategorytest
-    //Utils (random data)
+public class SportActivityTest extends BaseTest {
+
     //token helper (membantu mengambil token)
     private String categoryId;
 
     //Get Token -> ambil dari folder src/resources/json/token.json
     //Create
     @Test
-    public void createSportCategories(){
-        SportCategoryBody sportCategoryBody = new SportCategoryBody();
+    public void createSportActivity(){
+        SportActivityBody sportActivityBody = new SportActivityBody();
         String token = TokenHelper.getToken();
         String randomName = Utils.getCategoryName();
 
@@ -27,38 +27,69 @@ public class SportCategoryTest extends BaseTest {
         Response response = RestAssured.given()
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type", "application/json")
-                .body(sportCategoryBody.createSportCategoryData("Tarkam").toString())
+                .body(sportActivityBody.createSportActivityData(
+                        "22",
+                        3172,
+                        "Futsal",
+                        "Tarkam",
+                        1,
+                        70000,
+                        "Lapangan Sulaiman",
+                        "2026-06-04",
+                        "09:00",
+                        "10:00",
+                        "https://maps.app.goo.gl/h1AV4bfB2cojJMxK7").toString())
                 .when()
-                .post("v1/sport-categories/create")
+                .post("v1/sport-activities/create")
                 .then()
                 .extract().response();
 
         System.out.println("Create Response: " + response.asString());
 
         //Assert
-        //Get Category from response
+        //Get Activity from response
+        System.out.println("Created Category ID: " + categoryId);
         categoryId = response.jsonPath().getString("result.id");
         Assert.assertNotNull(categoryId,"Category ID should not be null");
-        System.out.println("Created Category ID: " + categoryId);
     }
     //Read
     @Test
-    public void getSportCategories(){
+    public void getSportActivity(){
         String token = TokenHelper.getToken();
-//curl --location 'https://sport-reservation-api-bootcamp.do.dibimbing.id/api/v1/sport-categories?is_paginate=false&per_page=&page=' \
+//curl --location 'https://sport-reservation-api-bootcamp.do.dibimbing.id/api/v1/sport-activities?is_paginate=true&per_page=10&page=1
         Response response = RestAssured.given()
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type", "application/json")
-                .queryParam("is_paginate","false")
-                .queryParam("per_page","")
-                .queryParam("page","")
+                .queryParam("is_paginate","true")
+                .queryParam("per_page",10)
+                .queryParam("page",1)
+                .queryParam("search","")
+                .queryParam("sport_category_id")
+                .queryParam("city_id")
                 .when()
-                .get("v1/sport-categories")
+                .get("v1/sport-activities")
                 .then()
                 .extract().response();
 
         System.out.println("Get Response: " + response.asString());
     }
+
+    //GET ACTIVITY BY ID
+    @Test
+    public void getActivityById() {
+        String token = TokenHelper.getToken();
+
+        Response response = RestAssured.given()
+                .header("Authorization","Bearer " + token)
+                .header("Content-Type", "application/json")
+                .when()
+                .get("v1/sport-activities/1")
+                .then()
+                .extract().response();
+
+        System.out.println("Get Response : " + response.asString());
+    }
+
     //Update
     //Delete
     @Test
@@ -75,5 +106,4 @@ public class SportCategoryTest extends BaseTest {
 
         System.out.println("Get Response: " + response.asString());
     }
-    //E2E
 }
