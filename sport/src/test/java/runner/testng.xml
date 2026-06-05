@@ -10,4 +10,9 @@
             <class name="tests.sportcategory.SportCategoryTest"/>
         </classes>
     </test>
+    <test name="Sport Activity Tests">
+        <classes>
+            <class name="tests.sportactivity.SportActivityTest"/>
+        </classes>
+    </test>
 </suite>

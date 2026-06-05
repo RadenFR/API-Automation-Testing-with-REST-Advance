@@ -6,11 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/src/main/java/body/sportactivity/SportActivityBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/main/java/body/sportactivity/SportActivityBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sport/src/main/resources/json/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/main/resources/json/token.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/src/test/java/runner/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/test/java/runner/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/src/test/java/tests/sportactivity/SportActivityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/test/java/tests/sportactivity/SportActivityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sport/src/test/java/tests/sportcategory/SportCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/test/java/tests/sportcategory/SportCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/target/classes/body/sportactivity/SportActivityBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/classes/body/sportactivity/SportActivityBody.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sport/target/classes/json/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/classes/json/token.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/target/test-classes/tests/sportactivity/SportActivityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/test-classes/tests/sportactivity/SportActivityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport/target/test-classes/tests/sportcategory/SportCategoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/test-classes/tests/sportcategory/SportCategoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +51,16 @@
     "TestNG.C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml.executor": "Run",
     "TestNG.LoginTest (1).executor": "Run",
     "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.loginTest.executor": "Run",
     "TestNG.SportActivityTest.createSportActivity.executor": "Run",
-    "TestNG.SportActivityTest.getSportActivity.executor": "Run",
+    "TestNG.SportActivityTest.deleteSportCategory.executor": "Run",
+    "TestNG.SportActivityTest.executor": "Run",
+    "TestNG.SportActivityTest.getActivityById.executor": "Run",
+    "TestNG.SportActivityTest.updateSportActivity.executor": "Run",
     "TestNG.SportCategoryTest.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/API-Automation-Testing-with-REST-Advance",
     "onboarding.tips.debug.path": "C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/main/java/Unknown/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -70,7 +77,7 @@
       <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SportActivityTest.getActivityById">
+  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="live-api-automation-b04-advance" />
       <method v="2">
@@ -82,7 +89,7 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sport" />
       <extension name="coverage">
         <pattern>
@@ -92,6 +99,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests.auth" />
       <option name="MAIN_CLASS_NAME" value="tests.auth.LoginTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SportActivityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.sportactivity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.sportactivity" />
+      <option name="MAIN_CLASS_NAME" value="tests.sportactivity.SportActivityTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -117,7 +142,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SportActivityTest.getActivityById" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SportActivityTest.deleteSportCategory" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sport" />
       <extension name="coverage">
         <pattern>
@@ -127,25 +152,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests.sportactivity" />
       <option name="MAIN_CLASS_NAME" value="tests.sportactivity.SportActivityTest" />
-      <option name="METHOD_NAME" value="getActivityById" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SportActivityTest.getSportActivity" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sport" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.sportactivity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.sportactivity" />
-      <option name="MAIN_CLASS_NAME" value="tests.sportactivity.SportActivityTest" />
-      <option name="METHOD_NAME" value="getSportActivity" />
+      <option name="METHOD_NAME" value="deleteSportCategory" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -172,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SportActivityTest.getActivityById" />
-        <item itemvalue="TestNG.SportActivityTest.createSportActivity" />
-        <item itemvalue="TestNG.SportActivityTest.getSportActivity" />
+        <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.SportCategoryTest" />
-        <item itemvalue="TestNG.LoginTest (1)" />
+        <item itemvalue="TestNG.SportActivityTest.createSportActivity" />
+        <item itemvalue="TestNG.SportActivityTest" />
+        <item itemvalue="TestNG.SportActivityTest.deleteSportCategory" />
       </list>
     </recent_temporary>
   </component>

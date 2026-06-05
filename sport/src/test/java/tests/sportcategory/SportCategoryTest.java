@@ -17,7 +17,7 @@ public class SportCategoryTest extends BaseTest {
 
     //Get Token -> ambil dari folder src/resources/json/token.json
     //Create
-    @Test
+    @Test(priority = 1)
     public void createSportCategories(){
         SportCategoryBody sportCategoryBody = new SportCategoryBody();
         String token = TokenHelper.getToken();
@@ -27,7 +27,7 @@ public class SportCategoryTest extends BaseTest {
         Response response = RestAssured.given()
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type", "application/json")
-                .body(sportCategoryBody.createSportCategoryData("Tarkam").toString())
+                .body(sportCategoryBody.createSportCategoryData("Sepakbola Tarkam").toString())
                 .when()
                 .post("v1/sport-categories/create")
                 .then()
@@ -42,7 +42,7 @@ public class SportCategoryTest extends BaseTest {
         System.out.println("Created Category ID: " + categoryId);
     }
     //Read
-    @Test
+    @Test(priority = 2)
     public void getSportCategories(){
         String token = TokenHelper.getToken();
 //curl --location 'https://sport-reservation-api-bootcamp.do.dibimbing.id/api/v1/sport-categories?is_paginate=false&per_page=&page=' \
@@ -60,16 +60,35 @@ public class SportCategoryTest extends BaseTest {
         System.out.println("Get Response: " + response.asString());
     }
     //Update
+    @Test(priority = 3)
+    public void updateSportCategories() {
+        SportCategoryBody sportCategoryBody = new SportCategoryBody();
+        String token = TokenHelper.getToken();
+        String randomName = Utils.getCategoryName();
+
+        //Ngehit endpoint
+        Response response = RestAssured.given()
+                .header("Authorization","Bearer " + token)
+                .header("Content-Type", "application/json")
+                .body(sportCategoryBody.updateSportCategoryData("Super Leage").toString())
+                .when()
+                .post("v1/sport-categories/update/" + categoryId)
+                .then()
+                .extract().response();
+
+        System.out.println("Create Response: " + response.asString());
+    }
+
     //Delete
-    @Test
-    public void deleteSportCategory(){
+    @Test(priority = 4)
+    public void deleteSportCategories(){
         String token = TokenHelper.getToken();
 
         Response response = RestAssured.given()
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type", "application/json")
                 .when()
-                .delete("v1/sport-categories/delete" + categoryId)
+                .delete("v1/sport-categories/delete/" + categoryId)
                 .then()
                 .extract().response();
 

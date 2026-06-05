@@ -13,11 +13,11 @@ import utils.Utils;
 public class SportActivityTest extends BaseTest {
 
     //token helper (membantu mengambil token)
-    private String categoryId;
+    private String activityId;
 
     //Get Token -> ambil dari folder src/resources/json/token.json
     //Create
-    @Test
+    @Test(priority = 1)
     public void createSportActivity(){
         SportActivityBody sportActivityBody = new SportActivityBody();
         String token = TokenHelper.getToken();
@@ -35,7 +35,7 @@ public class SportActivityTest extends BaseTest {
                         1,
                         70000,
                         "Lapangan Sulaiman",
-                        "2026-06-04",
+                        "2026-06-08",
                         "09:00",
                         "10:00",
                         "https://maps.app.goo.gl/h1AV4bfB2cojJMxK7").toString())
@@ -46,14 +46,35 @@ public class SportActivityTest extends BaseTest {
 
         System.out.println("Create Response: " + response.asString());
 
-        //Assert
         //Get Activity from response
-        System.out.println("Created Category ID: " + categoryId);
-        categoryId = response.jsonPath().getString("result.id");
-        Assert.assertNotNull(categoryId,"Category ID should not be null");
+        activityId = response.jsonPath().getString("result.id");
+        Assert.assertNotNull(activityId,"Activity ID should not be null");
+        System.out.println("Created Activity ID: " + activityId);
+
+        //Assert
+        // Status Code Validation
+        Assert.assertEquals(response.getStatusCode(), 200);
     }
     //Read
-    @Test
+
+    //GET ACTIVITY BY ID
+    @Test(priority = 2)
+    public void getActivityById() {
+        String token = TokenHelper.getToken();
+
+        Response response = RestAssured.given()
+                .header("Authorization","Bearer " + token)
+                .header("Content-Type", "application/json")
+                .when()
+                .get("v1/sport-activities/" + activityId)
+                .then()
+                .extract().response();
+
+        System.out.println("Get Response : " + response.asString());
+    }
+
+    //GET ACTIVITY
+    @Test(priority = 3)
     public void getSportActivity(){
         String token = TokenHelper.getToken();
 //curl --location 'https://sport-reservation-api-bootcamp.do.dibimbing.id/api/v1/sport-activities?is_paginate=true&per_page=10&page=1
@@ -74,25 +95,39 @@ public class SportActivityTest extends BaseTest {
         System.out.println("Get Response: " + response.asString());
     }
 
-    //GET ACTIVITY BY ID
-    @Test
-    public void getActivityById() {
+    //Update
+    @Test(priority = 4)
+    public void updateSportActivity() {
+        SportActivityBody sportActivityBody = new SportActivityBody();
         String token = TokenHelper.getToken();
+        String randomName = Utils.getCategoryName();
 
+        //Ngehit endpoint
         Response response = RestAssured.given()
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type", "application/json")
+                .body(sportActivityBody.updateSportActivityData(
+                        "66",
+                        3172,
+                        "Sepakbola",
+                        "Tarkam",
+                        5,
+                        90000,
+                        "Lapangan Arcamanik",
+                        "2026-06-10",
+                        "09:00",
+                        "10:00",
+                        "https://maps.app.goo.gl/h1AV4bfB2cojJMxK7").toString())
                 .when()
-                .get("v1/sport-activities/1")
+                .post("v1/sport-activities/update/" + activityId)
                 .then()
                 .extract().response();
 
-        System.out.println("Get Response : " + response.asString());
+        System.out.println("Create Response: " + response.asString());
     }
 
-    //Update
     //Delete
-    @Test
+    @Test(priority = 5)
     public void deleteSportCategory(){
         String token = TokenHelper.getToken();
 
@@ -100,7 +135,7 @@ public class SportActivityTest extends BaseTest {
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type", "application/json")
                 .when()
-                .delete("v1/sport-categories/delete" + categoryId)
+                .delete("v1/sport-categories/delete/" + activityId)
                 .then()
                 .extract().response();
 
