@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/src/main/java/body/sportactivity/SportActivityBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/main/java/body/sportactivity/SportActivityBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/src/main/resources/json/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/main/resources/json/token.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/src/test/java/runner/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/test/java/runner/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/src/test/java/tests/sportactivity/SportActivityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/test/java/tests/sportactivity/SportActivityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/src/test/java/tests/sportcategory/SportCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sport/src/test/java/tests/sportcategory/SportCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/target/classes/body/sportactivity/SportActivityBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/classes/body/sportactivity/SportActivityBody.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/target/classes/json/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/classes/json/token.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/target/test-classes/tests/sportactivity/SportActivityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/test-classes/tests/sportactivity/SportActivityTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sport/target/test-classes/tests/sportcategory/SportCategoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/sport/target/test-classes/tests/sportcategory/SportCategoryTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
