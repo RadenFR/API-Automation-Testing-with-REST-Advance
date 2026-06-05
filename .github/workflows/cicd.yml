@@ -1,5 +1,6 @@
 name: API Automation CI
 working-directory: sport
+run: mvn -B -ntp clean test
 
 on:
   push:
