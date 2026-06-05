@@ -2,5 +2,6 @@ body\sportcategory\SportCategoryBody.class
 sport\Main.class
 body\auth\LoginBody.class
 utils\Utils.class
+body\sportactivity\SportActivityBody.class
 utils\ConfigReader.class
 utils\TokenHelper.class

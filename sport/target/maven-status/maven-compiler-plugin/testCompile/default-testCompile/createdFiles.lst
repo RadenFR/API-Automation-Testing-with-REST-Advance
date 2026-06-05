@@ -1,3 +1,4 @@
 base\BaseTest.class
 tests\sportcategory\SportCategoryTest.class
 tests\auth\LoginTest.class
+tests\sportactivity\SportActivityTest.class

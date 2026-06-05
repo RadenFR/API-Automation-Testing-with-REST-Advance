@@ -16,9 +16,22 @@
       <class name="tests.sportcategory.SportCategoryTest">
         <methods>
           <include name="setUp"/>
-          <include name="createSportCategories"/>
+          <include name="deleteSportCategories"/>
+          <include name="getSportCategories"/>
         </methods>
       </class> <!-- tests.sportcategory.SportCategoryTest -->
     </classes>
   </test> <!-- Sport Category Tests(failed) -->
+  <test thread-count="5" name="Sport Activity Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.sportactivity.SportActivityTest">
+        <methods>
+          <include name="deleteSportCategory"/>
+          <include name="setUp"/>
+          <include name="createSportActivity"/>
+          <include name="getSportActivity"/>
+        </methods>
+      </class> <!-- tests.sportactivity.SportActivityTest -->
+    </classes>
+  </test> <!-- Sport Activity Tests(failed) -->
 </suite> <!-- Failed suite [API Test Suite] -->
