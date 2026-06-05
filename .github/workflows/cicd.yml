@@ -1,4 +1,5 @@
 name: API Automation CI
+working-directory: sport
 
 on:
   push:

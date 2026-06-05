@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/.workflow/api-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflow/api-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cicd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cicd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +62,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance" />
       <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport" />
       <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src\main\resources" />
       <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src\resources" />
-      <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance" />
       <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src" />
     </key>
   </component>
