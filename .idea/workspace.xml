@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="" />
+    <list default="true" id="5624c7f7-ea27-4967-9197-986ce6b310b0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +20,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/sport" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -38,15 +41,20 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.C:/Users/ramzy/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml.executor": "Run",
+    "TestNG.C:/Users/user/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml.executor": "Run",
     "TestNG.LoginTest (1).executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.LoginTest.loginTest.executor": "Run",
     "TestNG.SportActivityTest.createSportActivity.executor": "Run",
+    "TestNG.SportActivityTest.deleteSportActivity.executor": "Run",
     "TestNG.SportActivityTest.deleteSportCategory.executor": "Run",
     "TestNG.SportActivityTest.executor": "Run",
     "TestNG.SportActivityTest.getActivityById.executor": "Run",
     "TestNG.SportActivityTest.updateSportActivity.executor": "Run",
+    "TestNG.SportCategoryTest.createSportCategories.executor": "Run",
+    "TestNG.SportCategoryTest.deleteSportCategory.executor": "Run",
     "TestNG.SportCategoryTest.executor": "Run",
+    "TestNG.SportCategoryTest.getSportCategories.executor": "Debug",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -66,7 +74,7 @@
       <recent name="C:\Users\ramzy\IdeaProjects\API-Automation-Testing-with-REST-Advance\sport\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
+  <component name="RunManager" selected="TestNG.C:/Users/user/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="live-api-automation-b04-advance" />
       <method v="2">
@@ -78,7 +86,17 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/user/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sport" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/sport/src/test/java/runner/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sport" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +106,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests.auth" />
       <option name="MAIN_CLASS_NAME" value="tests.auth.LoginTest" />
-      <option name="METHOD_NAME" value="loginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -131,24 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SportActivityTest.deleteSportCategory" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sport" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.sportactivity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.sportactivity" />
-      <option name="MAIN_CLASS_NAME" value="tests.sportactivity.SportActivityTest" />
-      <option name="METHOD_NAME" value="deleteSportCategory" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SportCategoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sport" />
       <extension name="coverage">
@@ -168,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.loginTest" />
-        <item itemvalue="TestNG.SportCategoryTest" />
-        <item itemvalue="TestNG.SportActivityTest.createSportActivity" />
+        <item itemvalue="TestNG.C:/Users/user/IdeaProjects/API-Automation-Testing-with-REST-Advance/sport/src/test/java/runner/testng.xml" />
         <item itemvalue="TestNG.SportActivityTest" />
-        <item itemvalue="TestNG.SportActivityTest.deleteSportCategory" />
+        <item itemvalue="TestNG.SportCategoryTest" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.SportActivityTest.createSportActivity" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +192,11 @@
           <url>file://$PROJECT_DIR$/sport/src/main/java/sport/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sport/src/test/java/tests/sportcategory/SportCategoryTest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

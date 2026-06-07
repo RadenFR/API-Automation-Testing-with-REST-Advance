@@ -40,7 +40,10 @@ public class SportCategoryTest extends BaseTest {
         categoryId = response.jsonPath().getString("result.id");
         Assert.assertNotNull(categoryId,"Category ID should not be null");
         System.out.println("Created Category ID: " + categoryId);
+        System.out.println("Status Code : " + response.getStatusCode());
+
     }
+
     //Read
     @Test(priority = 2)
     public void getSportCategories(){
@@ -58,7 +61,9 @@ public class SportCategoryTest extends BaseTest {
                 .extract().response();
 
         System.out.println("Get Response: " + response.asString());
+        System.out.println("Status Code : " + response.getStatusCode());
     }
+
     //Update
     @Test(priority = 3)
     public void updateSportCategories() {
@@ -77,6 +82,7 @@ public class SportCategoryTest extends BaseTest {
                 .extract().response();
 
         System.out.println("Create Response: " + response.asString());
+        System.out.println("Status Code " + response.getStatusCode());
     }
 
     //Delete
@@ -93,6 +99,7 @@ public class SportCategoryTest extends BaseTest {
                 .extract().response();
 
         System.out.println("Get Response: " + response.asString());
+        System.out.println("Status Code : " + response.getStatusCode());
     }
     //E2E
 }

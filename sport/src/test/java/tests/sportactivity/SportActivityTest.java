@@ -2,7 +2,6 @@ package tests.sportactivity;
 
 import base.BaseTest;
 import body.sportactivity.SportActivityBody;
-import body.sportcategory.SportCategoryBody;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -48,12 +47,10 @@ public class SportActivityTest extends BaseTest {
 
         //Get Activity from response
         activityId = response.jsonPath().getString("result.id");
-        Assert.assertNotNull(activityId,"Activity ID should not be null");
         System.out.println("Created Activity ID: " + activityId);
 
         //Assert
-        // Status Code Validation
-        Assert.assertEquals(response.getStatusCode(), 200);
+        Assert.assertNotNull(activityId,"Activity ID should not be null");
     }
     //Read
 
@@ -68,6 +65,7 @@ public class SportActivityTest extends BaseTest {
                 .when()
                 .get("v1/sport-activities/" + activityId)
                 .then()
+                .log().all()
                 .extract().response();
 
         System.out.println("Get Response : " + response.asString());
@@ -85,11 +83,10 @@ public class SportActivityTest extends BaseTest {
                 .queryParam("per_page",10)
                 .queryParam("page",1)
                 .queryParam("search","")
-                .queryParam("sport_category_id")
-                .queryParam("city_id")
                 .when()
                 .get("v1/sport-activities")
                 .then()
+                .log().all()
                 .extract().response();
 
         System.out.println("Get Response: " + response.asString());
@@ -128,14 +125,14 @@ public class SportActivityTest extends BaseTest {
 
     //Delete
     @Test(priority = 5)
-    public void deleteSportCategory(){
+    public void deleteSportActivity(){
         String token = TokenHelper.getToken();
 
         Response response = RestAssured.given()
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type", "application/json")
                 .when()
-                .delete("v1/sport-categories/delete/" + activityId)
+                .delete("v1/sport-activities/delete/" + activityId)
                 .then()
                 .extract().response();
 

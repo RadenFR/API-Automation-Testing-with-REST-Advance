@@ -32,6 +32,7 @@ public class LoginTest extends BaseTest {
                 .extract().response();
 
         System.out.println("Response : " + response.asString());
+        System.out.println("Status Code : " + response.getStatusCode());
 
         //extract token
         String token = response.jsonPath().get("data.token");
